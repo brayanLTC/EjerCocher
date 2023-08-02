@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.titulo{
+	text-align: center;
+}
+
+table, tr,th,td{
+	padding: 10px;
+	border: solid black 2px;
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 10%;
+}

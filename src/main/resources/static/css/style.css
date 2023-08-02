@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.coche ,.titulo,.tabla{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+table,th,td{
+	border: solid darkslategrey 1px;
+	border-collapse: collapse;
+	padding: 20px;
+}
+
+.encabezado{
+	background-color: lightgrey;
+}

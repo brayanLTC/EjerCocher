@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title th:text="${pestana}"></title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+</head>
+<body>
+	
+	<h1 class="titulo" th:text="${titulo}"></h1>
+	
+	<div class="coche">
+	<ul th:if="${coche}">
+		<li><strong>Matricula: </strong><span th:text="${coche.matricula}"></span></li>
+		<li><strong>Marca: </strong><span th:text="${coche.marca}"></span></li>
+		<li><strong>Modelo: </strong><span th:text="${coche.modelo}"></span></li>
+	</ul>
+	
+	</div>
+	
+	<div class="tabla" th:if="${lista}">
+		<table >
+			
+			<tbody>
+				<th class="encabezado">Matricula</th>
+				<th class="encabezado">Marca</th>
+				<th class="encabezado">Modelo</th>
+
+				<tr th:each="coche : ${lista}">
+					<td class="matricula" th:text="${coche.matricula}"></td>
+					<td class="marca" th:text="${coche.marca}"></td>
+					<td class="modelo" th:text="${coche.modelo}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	
+	
+</body>
+</html>
